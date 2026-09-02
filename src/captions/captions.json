@@ -1,0 +1,528 @@
+{
+  "pages": [
+    {
+      "text": "¿Tu Wi-Fi?",
+      "startMs": 0,
+      "endMs": 1280,
+      "tokens": [
+        {
+          "text": "¿Tu",
+          "fromMs": 0,
+          "toMs": 140
+        },
+        {
+          "text": "Wi-Fi?",
+          "fromMs": 140,
+          "toMs": 1080
+        }
+      ]
+    },
+    {
+      "text": "Pero no siempre es Internet...",
+      "startMs": 1080,
+      "endMs": 3500,
+      "tokens": [
+        {
+          "text": "Pero",
+          "fromMs": 1080,
+          "toMs": 1760
+        },
+        {
+          "text": "no",
+          "fromMs": 1760,
+          "toMs": 1920
+        },
+        {
+          "text": "siempre",
+          "fromMs": 1920,
+          "toMs": 2220
+        },
+        {
+          "text": "es",
+          "fromMs": 2220,
+          "toMs": 2380
+        },
+        {
+          "text": "Internet...",
+          "fromMs": 2380,
+          "toMs": 3300
+        }
+      ]
+    },
+    {
+      "text": "La señal sale, intenta llegar...",
+      "startMs": 3300,
+      "endMs": 5540,
+      "tokens": [
+        {
+          "text": "La",
+          "fromMs": 3300,
+          "toMs": 3520
+        },
+        {
+          "text": "señal",
+          "fromMs": 3520,
+          "toMs": 3860
+        },
+        {
+          "text": "sale,",
+          "fromMs": 3860,
+          "toMs": 4540
+        },
+        {
+          "text": "intenta",
+          "fromMs": 4540,
+          "toMs": 5000
+        },
+        {
+          "text": "llegar...",
+          "fromMs": 5000,
+          "toMs": 5340
+        }
+      ]
+    },
+    {
+      "text": "Una vez,",
+      "startMs": 5340,
+      "endMs": 6500,
+      "tokens": [
+        {
+          "text": "Una",
+          "fromMs": 5340,
+          "toMs": 5740
+        },
+        {
+          "text": "vez,",
+          "fromMs": 5740,
+          "toMs": 6300
+        }
+      ]
+    },
+    {
+      "text": "otra vez,",
+      "startMs": 6300,
+      "endMs": 8020,
+      "tokens": [
+        {
+          "text": "otra",
+          "fromMs": 6300,
+          "toMs": 6960
+        },
+        {
+          "text": "vez,",
+          "fromMs": 6960,
+          "toMs": 7580
+        }
+      ]
+    },
+    {
+      "text": "otra vez...",
+      "startMs": 8020,
+      "endMs": 9160,
+      "tokens": [
+        {
+          "text": "otra",
+          "fromMs": 8020,
+          "toMs": 8220
+        },
+        {
+          "text": "vez...",
+          "fromMs": 8220,
+          "toMs": 8960
+        }
+      ]
+    },
+    {
+      "text": "Equipo antiguo, solo 2.4,",
+      "startMs": 8960,
+      "endMs": 12820,
+      "tokens": [
+        {
+          "text": "Equipo",
+          "fromMs": 8960,
+          "toMs": 10480
+        },
+        {
+          "text": "antiguo,",
+          "fromMs": 10480,
+          "toMs": 11380
+        },
+        {
+          "text": "solo",
+          "fromMs": 11380,
+          "toMs": 11500
+        },
+        {
+          "text": "2.4,",
+          "fromMs": 11500,
+          "toMs": 12620
+        }
+      ]
+    },
+    {
+      "text": "interferencia, distancia,",
+      "startMs": 12620,
+      "endMs": 14520,
+      "tokens": [
+        {
+          "text": "interferencia,",
+          "fromMs": 12620,
+          "toMs": 13560
+        },
+        {
+          "text": "distancia,",
+          "fromMs": 13560,
+          "toMs": 14320
+        }
+      ]
+    },
+    {
+      "text": "mala ubicación.",
+      "startMs": 14320,
+      "endMs": 15540,
+      "tokens": [
+        {
+          "text": "mala",
+          "fromMs": 14320,
+          "toMs": 14480
+        },
+        {
+          "text": "ubicación.",
+          "fromMs": 14480,
+          "toMs": 15320
+        }
+      ]
+    },
+    {
+      "text": "Antes de comprar,",
+      "startMs": 15540,
+      "endMs": 17300,
+      "tokens": [
+        {
+          "text": "Antes",
+          "fromMs": 15540,
+          "toMs": 15540
+        },
+        {
+          "text": "de",
+          "fromMs": 15540,
+          "toMs": 15700
+        },
+        {
+          "text": "comprar,",
+          "fromMs": 15700,
+          "toMs": 17100
+        }
+      ]
+    },
+    {
+      "text": "hay que diagnosticar.",
+      "startMs": 17100,
+      "endMs": 19760,
+      "tokens": [
+        {
+          "text": "hay",
+          "fromMs": 17100,
+          "toMs": 17460
+        },
+        {
+          "text": "que",
+          "fromMs": 17460,
+          "toMs": 17580
+        },
+        {
+          "text": "diagnosticar.",
+          "fromMs": 17580,
+          "toMs": 19560
+        }
+      ]
+    },
+    {
+      "text": "Soporte PYME revisa tu señal,",
+      "startMs": 19560,
+      "endMs": 22140,
+      "tokens": [
+        {
+          "text": "Soporte",
+          "fromMs": 19560,
+          "toMs": 20460
+        },
+        {
+          "text": "PYME",
+          "fromMs": 20460,
+          "toMs": 20800
+        },
+        {
+          "text": "revisa",
+          "fromMs": 20800,
+          "toMs": 21140
+        },
+        {
+          "text": "tu",
+          "fromMs": 21140,
+          "toMs": 21360
+        },
+        {
+          "text": "señal,",
+          "fromMs": 21360,
+          "toMs": 21940
+        }
+      ]
+    },
+    {
+      "text": "tus canales, tu seguridad",
+      "startMs": 21940,
+      "endMs": 23720,
+      "tokens": [
+        {
+          "text": "tus",
+          "fromMs": 21940,
+          "toMs": 22060
+        },
+        {
+          "text": "canales,",
+          "fromMs": 22060,
+          "toMs": 22540
+        },
+        {
+          "text": "tu",
+          "fromMs": 22540,
+          "toMs": 22640
+        },
+        {
+          "text": "seguridad",
+          "fromMs": 22640,
+          "toMs": 23240
+        }
+      ]
+    },
+    {
+      "text": "y cada conexión.",
+      "startMs": 23720,
+      "endMs": 24980,
+      "tokens": [
+        {
+          "text": "y",
+          "fromMs": 23720,
+          "toMs": 23820
+        },
+        {
+          "text": "cada",
+          "fromMs": 23820,
+          "toMs": 24020
+        },
+        {
+          "text": "conexión.",
+          "fromMs": 24020,
+          "toMs": 24780
+        }
+      ]
+    },
+    {
+      "text": "Y si tu red quedó atrás,",
+      "startMs": 24780,
+      "endMs": 26860,
+      "tokens": [
+        {
+          "text": "Y",
+          "fromMs": 24780,
+          "toMs": 25020
+        },
+        {
+          "text": "si",
+          "fromMs": 25020,
+          "toMs": 25160
+        },
+        {
+          "text": "tu",
+          "fromMs": 25160,
+          "toMs": 25360
+        },
+        {
+          "text": "red",
+          "fromMs": 25360,
+          "toMs": 25600
+        },
+        {
+          "text": "quedó",
+          "fromMs": 25600,
+          "toMs": 25960
+        },
+        {
+          "text": "atrás,",
+          "fromMs": 25960,
+          "toMs": 26320
+        }
+      ]
+    },
+    {
+      "text": "es momento de avanzar:",
+      "startMs": 26860,
+      "endMs": 28840,
+      "tokens": [
+        {
+          "text": "es",
+          "fromMs": 26860,
+          "toMs": 27080
+        },
+        {
+          "text": "momento",
+          "fromMs": 27080,
+          "toMs": 27300
+        },
+        {
+          "text": "de",
+          "fromMs": 27300,
+          "toMs": 27680
+        },
+        {
+          "text": "avanzar:",
+          "fromMs": 27680,
+          "toMs": 28540
+        }
+      ]
+    },
+    {
+      "text": "¡Wi-Fi 7!",
+      "startMs": 28840,
+      "endMs": 30220,
+      "tokens": [
+        {
+          "text": "¡Wi-Fi",
+          "fromMs": 28840,
+          "toMs": 29000
+        },
+        {
+          "text": "7!",
+          "fromMs": 29000,
+          "toMs": 30020
+        }
+      ]
+    },
+    {
+      "text": "Más capacidad, más velocidad,",
+      "startMs": 30020,
+      "endMs": 32380,
+      "tokens": [
+        {
+          "text": "Más",
+          "fromMs": 30020,
+          "toMs": 30520
+        },
+        {
+          "text": "capacidad,",
+          "fromMs": 30520,
+          "toMs": 31660
+        },
+        {
+          "text": "más",
+          "fromMs": 31660,
+          "toMs": 31860
+        },
+        {
+          "text": "velocidad,",
+          "fromMs": 31860,
+          "toMs": 32180
+        }
+      ]
+    },
+    {
+      "text": "más dispositivos comunicándose al mismo tiempo.",
+      "startMs": 32980,
+      "endMs": 36120,
+      "tokens": [
+        {
+          "text": "más",
+          "fromMs": 32980,
+          "toMs": 33160
+        },
+        {
+          "text": "dispositivos",
+          "fromMs": 33160,
+          "toMs": 33860
+        },
+        {
+          "text": "comunicándose",
+          "fromMs": 33860,
+          "toMs": 34900
+        },
+        {
+          "text": "al",
+          "fromMs": 34900,
+          "toMs": 35140
+        },
+        {
+          "text": "mismo",
+          "fromMs": 35140,
+          "toMs": 35400
+        },
+        {
+          "text": "tiempo.",
+          "fromMs": 35400,
+          "toMs": 35880
+        }
+      ]
+    },
+    {
+      "text": "No adivines el problema...",
+      "startMs": 36120,
+      "endMs": 37860,
+      "tokens": [
+        {
+          "text": "No",
+          "fromMs": 36120,
+          "toMs": 36240
+        },
+        {
+          "text": "adivines",
+          "fromMs": 36240,
+          "toMs": 36660
+        },
+        {
+          "text": "el",
+          "fromMs": 36660,
+          "toMs": 36820
+        },
+        {
+          "text": "problema...",
+          "fromMs": 36820,
+          "toMs": 37300
+        }
+      ]
+    },
+    {
+      "text": "Diagnóstico Wi-Fi",
+      "startMs": 37860,
+      "endMs": 39220,
+      "tokens": [
+        {
+          "text": "Diagnóstico",
+          "fromMs": 37860,
+          "toMs": 38500
+        },
+        {
+          "text": "Wi-Fi",
+          "fromMs": 38500,
+          "toMs": 39020
+        }
+      ]
+    },
+    {
+      "text": "Soporte PYME.",
+      "startMs": 39940,
+      "endMs": 43000,
+      "tokens": [
+        {
+          "text": "Soporte",
+          "fromMs": 39940,
+          "toMs": 40520
+        },
+        {
+          "text": "PYME.",
+          "fromMs": 40520,
+          "toMs": 42000
+        }
+      ]
+    }
+  ]
+}
