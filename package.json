@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "node scripts/prepare-reel.mjs",
+    "reel": "node scripts/prepare-reel.mjs && node scripts/render-reel.mjs",
+    "reel:preview": "node scripts/prepare-reel.mjs && remotion preview src/index.ts",
     "preview": "remotion preview src/index.ts",
-    "render": "remotion render DiagnosticoWifiReel Diagnostico-Wifi-Reel-Final.mp4 --codec=h264 --audio-codec=aac",
-    "build": "npm run render"
+    "render": "node scripts/render-reel.mjs"
   },
   "keywords": [],
   "author": "",

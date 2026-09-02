@@ -4,10 +4,19 @@ node_modules/
 .pnp.js
 
 # Production / Render output
-out/
+out/*
+!out/.gitkeep
 build/
 dist/
-*.mp4
+
+# Input & Generated media
+input/*
+!input/.gitkeep
+public/generated/*
+!public/generated/.gitkeep
+
+# Test frame renders
+test_frame*.png
 
 # Environment & logs
 .env

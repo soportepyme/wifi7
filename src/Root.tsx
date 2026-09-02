@@ -1,11 +1,12 @@
 import React from 'react';
 import { Composition } from 'remotion';
 import { Reel } from './Reel';
+import { MANIFEST } from './generated-manifest';
 
-export const TOTAL_DURATION_IN_FRAMES = 1065;
-export const VIDEO_FPS = 24;
+export const VIDEO_FPS = MANIFEST.fps || 24;
 export const VIDEO_WIDTH = 1080;
 export const VIDEO_HEIGHT = 1920;
+export const TOTAL_DURATION_IN_FRAMES = Math.max(1, MANIFEST.durationInFrames || 24);
 
 export const Root: React.FC = () => {
   return (

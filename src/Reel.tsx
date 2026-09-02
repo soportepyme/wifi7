@@ -1,9 +1,11 @@
 import React from 'react';
-import { Audio, staticFile } from 'remotion';
-import { VideoSequence } from './components/VideoSequence';
-import { Captions } from './components/Captions';
+import { Sequence, Audio, staticFile } from 'remotion';
+import { Video } from '@remotion/media';
+import { MANIFEST } from './generated-manifest';
 
 export const Reel: React.FC = () => {
+  let accumulatedFrom = 0;
+
   return (
     <div
       style={{
@@ -14,17 +16,39 @@ export const Reel: React.FC = () => {
         overflow: 'hidden',
       }}
     >
-      {/* Background Video Sequence - All MP4 videos muted (volume 0) */}
-      <VideoSequence />
+      {/* Sequential normalized video clips */}
+      {MANIFEST.videos.map((clip, index) => {
+        const from = accumulatedFrom;
+        accumulatedFrom += clip.durationInFrames;
 
-      {/* Main and Only Audio Track */}
-      <Audio
-        src={staticFile('diagnostico_wifi.mp3')}
-        volume={1}
-      />
+        return (
+          <Sequence
+            key={`${clip.id}-${clip.file}-${index}`}
+            from={from}
+            durationInFrames={clip.durationInFrames}
+          >
+            <Video
+              src={staticFile(`generated/${clip.file}`)}
+              muted
+              playbackRate={1}
+              objectFit="cover"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Sequence>
+        );
+      })}
 
-      {/* Synchronized Reel/TikTok Style Dynamic Captions */}
-      <Captions />
+      {/* Main audio track */}
+      {MANIFEST.audioFileName ? (
+        <Audio
+          src={staticFile(`generated/${MANIFEST.audioFileName}`)}
+          volume={1}
+        />
+      ) : null}
     </div>
   );
 };
