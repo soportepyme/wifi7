@@ -1,5 +1,6 @@
-import { DynamicSegment, EditingPresetType, ShotFramingValues, ShotType } from './types';
+import { BeatMap, DynamicSegment, EditingPresetType, ShotFramingValues, ShotType } from './types';
 import { SHOT_FRAMING } from './DynamicCamera';
+import { buildSopyViralBeatSyncedSegments } from './BeatSyncEngine';
 
 export interface PresetProfile {
   name: EditingPresetType;
@@ -12,7 +13,7 @@ export interface PresetProfile {
 export const PRESET_PROFILES: Record<EditingPresetType, PresetProfile> = {
   SOPY_VIRAL: {
     name: 'SOPY_VIRAL',
-    description: 'High energy modern viral format: 0.4-1.1s hook jump cuts, punch zooms, whip pans and subtle camera shakes.',
+    description: 'High energy modern viral format: 0.4-1.1s hook jump cuts, punch zooms, whip pans and subtle camera shakes synchronized to music beats.',
     hookCutsRangeFrames: [12, 33], // 0.4s - 1.1s @ 30fps
     bodyCutsRangeFrames: [21, 66], // 0.7s - 2.2s @ 30fps
     shotSequence: ['WIDE', 'CLOSEUP', 'DETAIL', 'RIGHT_FOCUS', 'MEDIUM', 'LEFT_FOCUS', 'CLOSEUP', 'DETAIL', 'WIDE'],
@@ -55,12 +56,14 @@ export function getShotFraming(shot: ShotType): ShotFramingValues {
 }
 
 /**
- * Generates the dynamic segments for SoportePyme Reel based on the selected preset.
+ * Generates the dynamic segments for SoportePyme Reel based on the selected preset and beat sync.
  */
 export function buildSopyReelSegments(
   scene1File = 'escena1_cfr.mp4',
   scene2File = 'escena2_cfr.mp4',
-  preset: EditingPresetType = 'SOPY_VIRAL'
+  preset: EditingPresetType = 'SOPY_VIRAL',
+  beatMap?: BeatMap | null,
+  beatSync = true
 ): DynamicSegment[] {
   if (preset === 'NONE') {
     return [
@@ -437,198 +440,7 @@ export function buildSopyReelSegments(
     ];
   }
 
-  // Default: SOPY_VIRAL (High energy jump cuts, punch zooms, whip pans, subtle camera shakes)
-  return [
-    // -------------------------------------------------------------
-    // SCENE 1: Overload / Caos (0.00s - 10.00s | Frames 0 - 300)
-    // -------------------------------------------------------------
-    // 1. Hook initial establishing shot (0.0 - 0.80s)
-    {
-      id: 'viral_s1_01_hook_wide',
-      sourceFile: scene1File,
-      sourceInSec: 0.0,
-      durationInFrames: 24, // 0.80s
-      shot: 'WIDE',
-      cameraEffect: 'SLOW_PUSH',
-      energy: 'HOOK',
-      label: 'Hook Wide',
-    },
-    // 2. Immediate jump cut to Sopy/Protagonist Close-up (0.80 - 1.60s)
-    {
-      id: 'viral_s1_02_hook_closeup',
-      sourceFile: scene1File,
-      sourceInSec: 0.8,
-      durationInFrames: 24, // 0.80s
-      shot: 'CLOSEUP',
-      cameraEffect: 'PUNCH_IN',
-      punchConfig: { durationFrames: 7, startScale: 1.15, targetScale: 1.28 },
-      energy: 'HOOK',
-      label: 'Hook Closeup Punch',
-    },
-    // 3. Detail shot on devices/congestion (1.60 - 2.33s)
-    {
-      id: 'viral_s1_03_hook_detail',
-      sourceFile: scene1File,
-      sourceInSec: 1.6,
-      durationInFrames: 22, // 0.73s
-      shot: 'DETAIL',
-      cameraEffect: 'NONE',
-      energy: 'HOOK',
-      label: 'Hook Detail',
-    },
-    // 4. Right focus with subtle camera shake impact on beat (2.33 - 3.00s)
-    {
-      id: 'viral_s1_04_hook_shake',
-      sourceFile: scene1File,
-      sourceInSec: 2.33,
-      durationInFrames: 20, // 0.67s
-      shot: 'RIGHT_FOCUS',
-      cameraEffect: 'CAMERA_SHAKE',
-      shakeConfig: { intensity: 9, durationFrames: 6, startFrame: 0 },
-      energy: 'HOOK',
-      label: 'Hook Shake Impact',
-    },
-    // 5. Jump cut to Medium shot (3.00 - 4.50s)
-    {
-      id: 'viral_s1_05_body_medium',
-      sourceFile: scene1File,
-      sourceInSec: 3.0,
-      durationInFrames: 45, // 1.50s
-      shot: 'MEDIUM',
-      cameraEffect: 'NONE',
-      energy: 'HIGH',
-      label: 'Body Medium',
-    },
-    // 6. Punch Zoom on Left Focus (4.50 - 5.83s)
-    {
-      id: 'viral_s1_06_body_leftpunch',
-      sourceFile: scene1File,
-      sourceInSec: 4.5,
-      durationInFrames: 40, // 1.33s
-      shot: 'LEFT_FOCUS',
-      cameraEffect: 'PUNCH_IN',
-      punchConfig: { durationFrames: 8, startScale: 1.12, targetScale: 1.25 },
-      energy: 'HIGH',
-      label: 'Body Left Punch',
-    },
-    // 7. Hard cut to Close-up (5.83 - 7.33s)
-    {
-      id: 'viral_s1_07_body_closeup',
-      sourceFile: scene1File,
-      sourceInSec: 5.83,
-      durationInFrames: 45, // 1.50s
-      shot: 'CLOSEUP',
-      cameraEffect: 'NONE',
-      energy: 'HIGH',
-      label: 'Body Closeup Hard Cut',
-    },
-    // 8. Detail cut on problem (7.33 - 8.66s)
-    {
-      id: 'viral_s1_08_body_detail',
-      sourceFile: scene1File,
-      sourceInSec: 7.33,
-      durationInFrames: 40, // 1.33s
-      shot: 'DETAIL',
-      cameraEffect: 'NONE',
-      energy: 'HIGH',
-      label: 'Body Detail',
-    },
-    // 9. Wide shot leading into Whip Pan transition (8.66 - 10.00s)
-    {
-      id: 'viral_s1_09_body_whipout',
-      sourceFile: scene1File,
-      sourceInSec: 8.66,
-      durationInFrames: 40, // 1.34s
-      shot: 'WIDE',
-      cameraEffect: 'SLOW_PUSH',
-      transitionOut: 'WHIP_RIGHT',
-      energy: 'HIGH',
-      label: 'Body Wide Whip Out',
-    },
-
-    // -------------------------------------------------------------
-    // SCENE 2: Wi-Fi 7 Solution / Control (10.00s - 20.00s | Frames 300 - 600)
-    // -------------------------------------------------------------
-    // 10. Whip In entrance with tech impact shake (10.00 - 11.17s)
-    {
-      id: 'viral_s2_01_whipin_shake',
-      sourceFile: scene2File,
-      sourceInSec: 0.0,
-      durationInFrames: 35, // 1.17s
-      shot: 'MEDIUM',
-      transitionIn: 'WHIP_RIGHT',
-      cameraEffect: 'CAMERA_SHAKE',
-      shakeConfig: { intensity: 11, durationFrames: 7, startFrame: 0 },
-      energy: 'HIGH',
-      label: 'Wi-Fi 7 Whip In & Shake',
-    },
-    // 11. Big punch zoom on Wi-Fi 7 router / hardware (11.17 - 12.67s)
-    {
-      id: 'viral_s2_02_tech_punch',
-      sourceFile: scene2File,
-      sourceInSec: 1.17,
-      durationInFrames: 45, // 1.50s
-      shot: 'DETAIL',
-      cameraEffect: 'PUNCH_IN',
-      punchConfig: { durationFrames: 8, startScale: 1.25, targetScale: 1.45 },
-      energy: 'HIGH',
-      label: 'Wi-Fi 7 Detail Punch',
-    },
-    // 12. Right Focus reframe (12.67 - 14.00s)
-    {
-      id: 'viral_s2_03_right_focus',
-      sourceFile: scene2File,
-      sourceInSec: 2.67,
-      durationInFrames: 40, // 1.33s
-      shot: 'RIGHT_FOCUS',
-      cameraEffect: 'NONE',
-      energy: 'HIGH',
-      label: 'Right Focus Reframe',
-    },
-    // 13. Wide presentation of speed / smart home (14.00 - 15.67s)
-    {
-      id: 'viral_s2_04_wide_push',
-      sourceFile: scene2File,
-      sourceInSec: 4.0,
-      durationInFrames: 50, // 1.67s
-      shot: 'WIDE',
-      cameraEffect: 'SLOW_PUSH',
-      energy: 'HIGH',
-      label: 'Wide Push Solution',
-    },
-    // 14. Punch closeup on price card / offer (15.67 - 17.17s)
-    {
-      id: 'viral_s2_05_price_closeup',
-      sourceFile: scene2File,
-      sourceInSec: 5.67,
-      durationInFrames: 45, // 1.50s
-      shot: 'CLOSEUP',
-      cameraEffect: 'PUNCH_IN',
-      punchConfig: { durationFrames: 8, startScale: 1.15, targetScale: 1.30 },
-      energy: 'HIGH',
-      label: 'Price Closeup Punch',
-    },
-    // 15. Clean Medium shot (17.17 - 18.67s)
-    {
-      id: 'viral_s2_06_medium_clean',
-      sourceFile: scene2File,
-      sourceInSec: 7.17,
-      durationInFrames: 45, // 1.50s
-      shot: 'MEDIUM',
-      cameraEffect: 'NONE',
-      energy: 'HIGH',
-      label: 'Medium Final Call',
-    },
-    // 16. Final closing shot with Sopy (18.67 - 20.00s)
-    {
-      id: 'viral_s2_07_final_wide',
-      sourceFile: scene2File,
-      sourceInSec: 8.67,
-      durationInFrames: 40, // 1.33s
-      shot: 'WIDE',
-      cameraEffect: 'SLOW_PUSH',
-      energy: 'HIGH',
-      label: 'Final Closing Wide',
-    },
-  ];
+  // Default: SOPY_VIRAL (High energy jump cuts, punch zooms, whip pans, subtle camera shakes with beat sync)
+  return buildSopyViralBeatSyncedSegments(scene1File, scene2File, beatMap, beatSync);
 }
+

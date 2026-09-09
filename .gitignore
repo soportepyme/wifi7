@@ -20,6 +20,10 @@ input/*
 !input/.gitkeep
 public/generated/*
 !public/generated/.gitkeep
+!public/generated/beat-map.json
+!public/generated/manifest.json
+!public/generated/ad_manifest.json
+
 
 # Environment & logs
 .env

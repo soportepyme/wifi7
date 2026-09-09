@@ -138,6 +138,10 @@ export type ManifestType = typeof MANIFEST;
   fs.writeFileSync(path.resolve('src/generated-manifest.ts'), tsContent);
 
   console.log('\nManifest successfully saved to public/generated/manifest.json and src/generated-manifest.ts');
+
+  // 4. Analyze beats for SOPY BEAT SYNC ENGINE
+  const { analyzeBeats } = await import('./analyze-beats.mjs');
+  await analyzeBeats(musicOut, { fps: 30, sampleRate: 44100 });
 }
 
 prepareReelAssets().catch(err => {

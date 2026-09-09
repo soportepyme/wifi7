@@ -40,6 +40,32 @@ export type EditingPresetType =
 
 export type EnergyLevel = 'LOW' | 'MEDIUM' | 'HIGH' | 'HOOK';
 
+export type BeatLevel = 'STRONG' | 'MEDIUM' | 'WEAK';
+
+export interface BeatPoint {
+  time: number;
+  frame: number;
+  strength: number;
+  level: BeatLevel;
+}
+
+export interface BeatMap {
+  version: number;
+  source: string;
+  sampleRate: number;
+  fps: number;
+  bpm: number;
+  confidence: number;
+  enabled: boolean;
+  stats: {
+    totalBeats: number;
+    strong: number;
+    medium: number;
+    weak: number;
+  };
+  beats: BeatPoint[];
+}
+
 export interface ShotFramingValues {
   scale: number;
   translateX: number; // in pixels (clamped to prevent black bars)
@@ -93,6 +119,9 @@ export interface DynamicSegment {
   punchConfig?: PunchZoomConfig;
   energy?: EnergyLevel;
   label?: string;
+  beatSynced?: boolean;
+  targetBeatFrame?: number;
+  from?: number;
 }
 
 export interface EditDecision {
@@ -120,3 +149,4 @@ export interface EditDecision {
   sourceOutSec?: number;
   [key: string]: any;
 }
+

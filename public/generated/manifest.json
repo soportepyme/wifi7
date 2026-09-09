@@ -1,0 +1,25 @@
+{
+  "compositionId": "SopyWifi7Reel",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 600,
+  "durationInSeconds": 20,
+  "audioFileName": "wifi7_music_20s.mp3",
+  "scenes": [
+    {
+      "id": "scene_overload",
+      "videoFile": "escena1_cfr.mp4",
+      "durationInFrames": 300,
+      "startFrame": 0,
+      "endFrame": 300
+    },
+    {
+      "id": "scene_wifi7",
+      "videoFile": "escena2_cfr.mp4",
+      "durationInFrames": 300,
+      "startFrame": 300,
+      "endFrame": 600
+    }
+  ]
+}

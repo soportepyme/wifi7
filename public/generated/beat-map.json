@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "source": "wifi7_music_20s.mp3",
+  "sampleRate": 44100,
+  "fps": 30,
+  "bpm": 128,
+  "confidence": 1,
+  "enabled": true,
+  "stats": {
+    "totalBeats": 43,
+    "strong": 22,
+    "medium": 17,
+    "weak": 4
+  },
+  "beats": [
+    {
+      "time": 0,
+      "frame": 0,
+      "strength": 0,
+      "level": "WEAK"
+    },
+    {
+      "time": 0.352,
+      "frame": 11,
+      "strength": 0.14,
+      "level": "WEAK"
+    },
+    {
+      "time": 0.82,
+      "frame": 25,
+      "strength": 0.07,
+      "level": "WEAK"
+    },
+    {
+      "time": 1.289,
+      "frame": 39,
+      "strength": 0.04,
+      "level": "WEAK"
+    },
+    {
+      "time": 1.758,
+      "frame": 53,
+      "strength": 0.46,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 2.227,
+      "frame": 67,
+      "strength": 0.6,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 2.695,
+      "frame": 81,
+      "strength": 0.55,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 3.164,
+      "frame": 95,
+      "strength": 0.61,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 3.633,
+      "frame": 109,
+      "strength": 0.59,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 4.102,
+      "frame": 123,
+      "strength": 0.49,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 4.57,
+      "frame": 137,
+      "strength": 0.56,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 5.039,
+      "frame": 151,
+      "strength": 0.54,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 5.508,
+      "frame": 165,
+      "strength": 0.6,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 5.977,
+      "frame": 179,
+      "strength": 0.52,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 6.445,
+      "frame": 193,
+      "strength": 0.57,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 6.914,
+      "frame": 207,
+      "strength": 0.62,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 7.383,
+      "frame": 221,
+      "strength": 0.53,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 7.852,
+      "frame": 236,
+      "strength": 0.38,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 8.32,
+      "frame": 250,
+      "strength": 0.37,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 8.789,
+      "frame": 264,
+      "strength": 0.58,
+      "level": "MEDIUM"
+    },
+    {
+      "time": 9.258,
+      "frame": 278,
+      "strength": 0.72,
+      "level": "STRONG"
+    },
+    {
+      "time": 9.727,
+      "frame": 292,
+      "strength": 0.94,
+      "level": "STRONG"
+    },
+    {
+      "time": 10.195,
+      "frame": 306,
+      "strength": 0.86,
+      "level": "STRONG"
+    },
+    {
+      "time": 10.664,
+      "frame": 320,
+      "strength": 0.87,
+      "level": "STRONG"
+    },
+    {
+      "time": 11.133,
+      "frame": 334,
+      "strength": 0.86,
+      "level": "STRONG"
+    },
+    {
+      "time": 11.602,
+      "frame": 348,
+      "strength": 0.85,
+      "level": "STRONG"
+    },
+    {
+      "time": 12.07,
+      "frame": 362,
+      "strength": 0.83,
+      "level": "STRONG"
+    },
+    {
+      "time": 12.539,
+      "frame": 376,
+      "strength": 0.78,
+      "level": "STRONG"
+    },
+    {
+      "time": 13.008,
+      "frame": 390,
+      "strength": 0.78,
+      "level": "STRONG"
+    },
+    {
+      "time": 13.477,
+      "frame": 404,
+      "strength": 0.76,
+      "level": "STRONG"
+    },
+    {
+      "time": 13.945,
+      "frame": 418,
+      "strength": 0.77,
+      "level": "STRONG"
+    },
+    {
+      "time": 14.414,
+      "frame": 432,
+      "strength": 0.74,
+      "level": "STRONG"
+    },
+    {
+      "time": 14.883,
+      "frame": 446,
+      "strength": 0.99,
+      "level": "STRONG"
+    },
+    {
+      "time": 15.352,
+      "frame": 461,
+      "strength": 0.74,
+      "level": "STRONG"
+    },
+    {
+      "time": 15.82,
+      "frame": 475,
+      "strength": 0.79,
+      "level": "STRONG"
+    },
+    {
+      "time": 16.289,
+      "frame": 489,
+      "strength": 0.9,
+      "level": "STRONG"
+    },
+    {
+      "time": 16.758,
+      "frame": 503,
+      "strength": 0.8,
+      "level": "STRONG"
+    },
+    {
+      "time": 17.227,
+      "frame": 517,
+      "strength": 1,
+      "level": "STRONG"
+    },
+    {
+      "time": 17.695,
+      "frame": 531,
+      "strength": 0.75,
+      "level": "STRONG"
+    },
+    {
+      "time": 18.164,
+      "frame": 545,
+      "strength": 0.81,
+      "level": "STRONG"
+    },
+    {
+      "time": 18.633,
+      "frame": 559,
+      "strength": 0.75,
+      "level": "STRONG"
+    },
+    {
+      "time": 19.102,
+      "frame": 573,
+      "strength": 0.81,
+      "level": "STRONG"
+    },
+    {
+      "time": 19.57,
+      "frame": 587,
+      "strength": 0.57,
+      "level": "MEDIUM"
+    }
+  ]
+}

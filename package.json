@@ -19,6 +19,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@audio/beat": "^2.1.3",
     "@remotion/captions": "^4.0.520",
     "@remotion/cli": "^4.0.520",
     "@remotion/media": "4.0.520",

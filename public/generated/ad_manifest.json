@@ -1,0 +1,200 @@
+{
+  "title": "SoportePyme Diagnóstico $250 - YouTube Ad 60s",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 1800,
+  "durationInSeconds": 60,
+  "music": {
+    "file": "fondo_musica.mp3",
+    "originalFile": "cama_60s.mp3",
+    "duckingVolume": 0.1,
+    "normalVolume": 0.32,
+    "fadeStartSec": 57.5,
+    "fadeEndSec": 60
+  },
+  "videos": [
+    {
+      "id": "clip_01",
+      "file": "ad_clip_01.mp4",
+      "originalName": "escena1.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 0,
+      "endFrame": 300,
+      "sceneNumber": 1,
+      "treatment": "Video fuente limpio de 10s. Aplicado sutil push-in digital (scale 1.00 -> 1.03)."
+    },
+    {
+      "id": "clip_02",
+      "file": "ad_clip_02.mp4",
+      "originalName": "escena2.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 300,
+      "endFrame": 600,
+      "sceneNumber": 2,
+      "treatment": "Fondo de pantalla desenfocado sutilmente para mitigar tipografías falsas de tienda online."
+    },
+    {
+      "id": "clip_03",
+      "file": "ad_clip_03.mp4",
+      "originalName": "escena3.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 600,
+      "endFrame": 900,
+      "sceneNumber": 3,
+      "treatment": "Etiquetas dudosas de IA en la parte inferior cubiertas con tarjetas tecnológicas de Remotion limpias."
+    },
+    {
+      "id": "clip_04",
+      "file": "ad_clip_04.mp4",
+      "originalName": "escena4.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 900,
+      "endFrame": 1200,
+      "sceneNumber": 4,
+      "treatment": "Filtro limpio y superposición de conceptos de conectividad con alta jerarquía visual."
+    },
+    {
+      "id": "clip_05",
+      "file": "ad_clip_05.mp4",
+      "originalName": "escena5.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 1200,
+      "endFrame": 1500,
+      "sceneNumber": 5,
+      "treatment": "Recorte preventivo a 6.2s para descartar tarjetas holográficas falsas de Gemini. Cuadro limpio sostenido durante la revelación del precio protagonista $250."
+    },
+    {
+      "id": "clip_06",
+      "file": "ad_clip_06.mp4",
+      "originalName": "escena6.mp4",
+      "durationInSeconds": 10,
+      "durationInFrames": 300,
+      "startFrame": 1500,
+      "endFrame": 1800,
+      "sceneNumber": 6,
+      "treatment": "Recorte preventivo a 7.6s para descartar panel lateral falso de Gemini. Cuadro limpio sostenido durante el CTA final \"ANTES DE GASTAR... DIAGNOSTICA.\""
+    }
+  ],
+  "narrations": [
+    {
+      "id": "voice_01",
+      "file": "01_problema.mp3",
+      "startSec": 0,
+      "startFrame": 0,
+      "durationSec": 8.385,
+      "endSec": 8.385,
+      "text": "Tu computadora está lentísima, el Internet se traba, YouTube carga y carga. Antes de gastar, descubre qué está fallando."
+    },
+    {
+      "id": "voice_02",
+      "file": "02_no_compres.mp3",
+      "startSec": 8.89,
+      "startFrame": 267,
+      "durationSec": 6.922,
+      "endSec": 15.812,
+      "text": "¡No compres otra computadora todavía y no pagues más megas a ciegas! El problema puede estar donde menos imaginas."
+    },
+    {
+      "id": "voice_03",
+      "file": "03_causas.mp3",
+      "startSec": 16.31,
+      "startFrame": 489,
+      "durationSec": 10.58,
+      "endSec": 26.89,
+      "text": "Puede ser tu disco duro, poca memoria, una tarjeta Wi-Fi limitada, señal débil, interferencias o demasiados equipos usando la red."
+    },
+    {
+      "id": "voice_04",
+      "file": "04_megas.mp3",
+      "startSec": 27.29,
+      "startFrame": 819,
+      "durationSec": 10.58,
+      "endSec": 37.87,
+      "text": "Porque puedes tener muchos megas contratados y aún así sufrir una mala conexión. Ping alto, congestión o mala cobertura pueden arruinar la experiencia."
+    },
+    {
+      "id": "voice_05",
+      "file": "05_solucion.mp3",
+      "startSec": 38.27,
+      "startFrame": 1148,
+      "durationSec": 9.091,
+      "endSec": 47.361,
+      "text": "En SoportePyme revisamos tu computadora y tu Wi-Fi en tu domicilio. Encontramos el verdadero cuello de botella por solo 250 pesos."
+    },
+    {
+      "id": "voice_06",
+      "file": "06_cierre_v2.mp3",
+      "fallbackFile": "06_cierre.mp3",
+      "startSec": 47.8,
+      "startFrame": 1434,
+      "durationSec": 12.199,
+      "endSec": 60,
+      "text": "Te decimos qué está fallando y qué necesitas realmente. Si autorizas la solución, tus 250 pesos se descuentan del servicio. Antes de gastar, Diagnostica."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "sfx_01",
+      "file": "01_compu_buffering.mp3",
+      "startSec": 0,
+      "startFrame": 0,
+      "volume": 0.35,
+      "description": "Buffering discreto bajo la escena 1"
+    },
+    {
+      "id": "sfx_02",
+      "file": "02_clic_pago.mp3",
+      "startSec": 8.89,
+      "startFrame": 267,
+      "volume": 0.5,
+      "description": "Clic de compra previa al freno"
+    },
+    {
+      "id": "sfx_03",
+      "file": "03_freno_digital.mp3",
+      "startSec": 9,
+      "startFrame": 270,
+      "volume": 0.7,
+      "description": "Impacto de freno digital sincronizado con ¡NO COMPRES!"
+    },
+    {
+      "id": "sfx_04",
+      "file": "04_escaneo.mp3",
+      "startSec": 16.31,
+      "startFrame": 489,
+      "volume": 0.4,
+      "description": "Escaneo tecnológico suave en causas"
+    },
+    {
+      "id": "sfx_05",
+      "file": "05_ping_red.mp3",
+      "startSec": 27.29,
+      "startFrame": 819,
+      "volume": 0.4,
+      "description": "Ping de red y latencia en escena 4"
+    },
+    {
+      "id": "sfx_06",
+      "file": "06_inicio_diagnostico.mp3",
+      "startSec": 38.27,
+      "startFrame": 1148,
+      "volume": 0.55,
+      "description": "Chime de inicio de diagnóstico en domicilio"
+    },
+    {
+      "id": "sfx_07",
+      "file": "07_confirmacion_final.mp3",
+      "startSec": 58.6,
+      "startFrame": 1758,
+      "volume": 0.65,
+      "description": "Confirmación final tras Diagnostica"
+    }
+  ],
+  "outputFileName": "soportepyme_diagnostico_250_youtube.mp4"
+}

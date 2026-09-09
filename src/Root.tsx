@@ -22,6 +22,8 @@ export const Root: React.FC = () => {
         height={REEL_HEIGHT}
         defaultProps={{
           editingPreset: 'SOPY_VIRAL' as EditingPresetType,
+          beatSync: true,
+          debugBeatMarkers: false,
         }}
       />
       <Composition
@@ -33,6 +35,8 @@ export const Root: React.FC = () => {
         height={REEL_HEIGHT}
         defaultProps={{
           editingPreset: 'SOPY_VIRAL' as EditingPresetType,
+          beatSync: true,
+          debugBeatMarkers: false,
         }}
       />
     </>

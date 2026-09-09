@@ -9,6 +9,7 @@ import {
   AbsoluteFill,
 } from 'remotion';
 import { MANIFEST } from './generated-manifest';
+import { BEAT_MAP } from './generated-beats';
 import { SceneOverload } from './components/SceneOverload';
 import { SceneWifi7 } from './components/SceneWifi7';
 import { Captions } from './components/Captions';
@@ -18,14 +19,19 @@ import {
   TransitionOverlay,
   buildSopyReelSegments,
   DynamicSegment,
+  BeatDebugMarkers,
 } from './editing';
 
 export interface SopyWifi7ReelProps {
   editingPreset?: EditingPresetType;
+  beatSync?: boolean;
+  debugBeatMarkers?: boolean;
 }
 
 export const SopyWifi7Reel: React.FC<SopyWifi7ReelProps> = ({
   editingPreset = 'SOPY_VIRAL',
+  beatSync = true,
+  debugBeatMarkers = false,
 }) => {
   const currentFrame = useCurrentFrame();
 
@@ -46,14 +52,16 @@ export const SopyWifi7Reel: React.FC<SopyWifi7ReelProps> = ({
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
   );
 
-  // Generate dynamic multicam segments or fallback to standard 1:1 tracks
+  // Generate dynamic multicam segments with Beat Sync or fallback
   const segments: DynamicSegment[] = React.useMemo(() => {
     return buildSopyReelSegments(
       'escena1_cfr.mp4',
       'escena2_cfr.mp4',
-      editingPreset
+      editingPreset,
+      BEAT_MAP,
+      beatSync
     );
-  }, [editingPreset]);
+  }, [editingPreset, beatSync]);
 
   // Compute accumulated sequence starting frames for segments
   let accumulatedFrom = 0;
@@ -180,7 +188,10 @@ export const SopyWifi7Reel: React.FC<SopyWifi7ReelProps> = ({
       {/* 6. Independent Captions Layer (Top level - zIndex: 50) */}
       <Captions />
 
-      {/* 7. Single Master Audio Track (No video audio, only Wi-Fi 7 Ya.mp3) */}
+      {/* 7. Optional Visual Beat Markers for Remotion Studio Debugging */}
+      <BeatDebugMarkers beatMap={BEAT_MAP} enabled={debugBeatMarkers} />
+
+      {/* 8. Single Master Audio Track (No video audio, only Wi-Fi 7 Ya.mp3) */}
       <Audio
         src={staticFile('generated/wifi7_music_20s.mp3')}
         volume={1}

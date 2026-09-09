@@ -8,3 +8,6 @@ export * from './DynamicCamera';
 export * from './DynamicShot';
 export * from './DynamicTransition';
 export * from './EditPresets';
+export * from './BeatSyncEngine';
+export * from './BeatDebugMarkers';
+

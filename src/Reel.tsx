@@ -1,14 +1,26 @@
 import React from 'react';
 import { Sequence, Audio, staticFile, useCurrentFrame, interpolate, OffthreadVideo } from 'remotion';
 import { MANIFEST } from './generated-manifest';
+import { BEAT_MAP } from './generated-beats';
 import { Captions } from './components/Captions';
-import { EditingPresetType, DynamicShot, buildSopyReelSegments } from './editing';
+import {
+  EditingPresetType,
+  DynamicShot,
+  buildSopyReelSegments,
+  BeatDebugMarkers,
+} from './editing';
 
 export interface ReelProps {
   editingPreset?: EditingPresetType;
+  beatSync?: boolean;
+  debugBeatMarkers?: boolean;
 }
 
-export const Reel: React.FC<ReelProps> = ({ editingPreset = 'SOPY_VIRAL' }) => {
+export const Reel: React.FC<ReelProps> = ({
+  editingPreset = 'SOPY_VIRAL',
+  beatSync = true,
+  debugBeatMarkers = false,
+}) => {
   const currentFrame = useCurrentFrame();
 
   // Technological Transition: CAOS -> CONTROL / WI-FI 7
@@ -26,8 +38,14 @@ export const Reel: React.FC<ReelProps> = ({ editingPreset = 'SOPY_VIRAL' }) => {
   const scene2File = scenes[1]?.videoFile || 'escena2_cfr.mp4';
 
   const dynamicSegments = React.useMemo(() => {
-    return buildSopyReelSegments(scene1File, scene2File, editingPreset);
-  }, [scene1File, scene2File, editingPreset]);
+    return buildSopyReelSegments(
+      scene1File,
+      scene2File,
+      editingPreset,
+      BEAT_MAP,
+      beatSync
+    );
+  }, [scene1File, scene2File, editingPreset, beatSync]);
 
   let accumulatedFrom = 0;
 
@@ -93,6 +111,9 @@ export const Reel: React.FC<ReelProps> = ({ editingPreset = 'SOPY_VIRAL' }) => {
 
       {/* Synchronized Modern Captions Overlay (Top layer - independent of camera movement) */}
       <Captions />
+
+      {/* Optional Visual Beat Markers */}
+      <BeatDebugMarkers beatMap={BEAT_MAP} enabled={debugBeatMarkers} />
 
       {/* The Single Master Audio Track */}
       {MANIFEST.audioFileName ? (
