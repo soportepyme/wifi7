@@ -1,571 +1,522 @@
 {
-  "text": " tu wifi, pero no siempre es internet, la señal sale, intenta llegar una vez, otra vez, otra vez, equipo es antiguo, solo 2.4, interferencia, distancia, mal ubicación, antes de comprar, hay que diagnosticar, soportar, prima, revisisa tu señal, tus canales, tu seguridad y cada conexión, ni si tu rella quedo atrás es momento de avanzar wifi 7 más capacidad, más velocidad más dispositivos comunicándose al mismo tiempo no adivíne ese problema que agnóstico wifi so por te pimo suporte pima",
+  "text": " En casa somos cuatro. Segura? Cuatro celulares, cuatro computadoras, dos televisiones, Alexa. Tres fogos, el refri, las cámaras, la consola, el reloj, la tablet, uno, otro, otro más. Todos quieren Wi-Fi. Tal vez tu internet no es el problema. Tu casa cambió, tu red también debería hacerlo. Y Fy7 más dispositivos más capacidad, una red preparada para tu hogar inteligente. Tu Wi-Fi puede con todos, contacta a soporte Fyme. Actualiza tu reir!",
   "chunks": [
     {
-      "text": " tu",
+      "text": " En",
       "timestamp": [
         0,
-        0.14
+        0.22
       ]
     },
     {
-      "text": " wifi,",
+      "text": " casa",
       "timestamp": [
-        0.14,
-        1.08
+        0.22,
+        0.5
       ]
     },
     {
-      "text": " pero",
+      "text": " somos",
       "timestamp": [
-        1.08,
-        1.76
+        0.5,
+        0.84
       ]
     },
     {
-      "text": " no",
+      "text": " cuatro.",
       "timestamp": [
-        1.76,
-        1.92
+        0.84,
+        2.08
       ]
     },
     {
-      "text": " siempre",
+      "text": " Segura?",
       "timestamp": [
-        1.92,
-        2.22
+        2.24,
+        3.36
       ]
     },
     {
-      "text": " es",
+      "text": " Cuatro",
       "timestamp": [
-        2.22,
-        2.38
+        3.44,
+        3.96
       ]
     },
     {
-      "text": " internet,",
+      "text": " celulares,",
       "timestamp": [
-        2.38,
-        3.3
+        3.96,
+        5.26
+      ]
+    },
+    {
+      "text": " cuatro",
+      "timestamp": [
+        5.26,
+        5.6
+      ]
+    },
+    {
+      "text": " computadoras,",
+      "timestamp": [
+        5.6,
+        6.94
+      ]
+    },
+    {
+      "text": " dos",
+      "timestamp": [
+        7.28,
+        7.42
+      ]
+    },
+    {
+      "text": " televisiones,",
+      "timestamp": [
+        7.42,
+        8.58
+      ]
+    },
+    {
+      "text": " Alexa.",
+      "timestamp": [
+        8.58,
+        10.46
+      ]
+    },
+    {
+      "text": " Tres",
+      "timestamp": [
+        11.02,
+        11.18
+      ]
+    },
+    {
+      "text": " fogos,",
+      "timestamp": [
+        11.18,
+        11.98
+      ]
+    },
+    {
+      "text": " el",
+      "timestamp": [
+        11.98,
+        12.12
+      ]
+    },
+    {
+      "text": " refri,",
+      "timestamp": [
+        12.12,
+        12.86
+      ]
+    },
+    {
+      "text": " las",
+      "timestamp": [
+        12.86,
+        13.08
+      ]
+    },
+    {
+      "text": " cámaras,",
+      "timestamp": [
+        13.08,
+        13.68
       ]
     },
     {
       "text": " la",
       "timestamp": [
-        3.3,
-        3.52
+        13.68,
+        13.76
       ]
     },
     {
-      "text": " señal",
+      "text": " consola,",
       "timestamp": [
-        3.52,
-        3.86
+        13.76,
+        14.56
       ]
     },
     {
-      "text": " sale,",
+      "text": " el",
       "timestamp": [
-        3.86,
-        4.54
+        14.7,
+        14.76
       ]
     },
     {
-      "text": " intenta",
+      "text": " reloj,",
       "timestamp": [
-        4.54,
-        5
+        14.76,
+        15.5
       ]
     },
     {
-      "text": " llegar",
+      "text": " la",
       "timestamp": [
-        5,
-        5.34
+        15.5,
+        15.88
       ]
     },
     {
-      "text": " una",
+      "text": " tablet,",
       "timestamp": [
-        5.34,
-        5.74
+        15.88,
+        16.82
       ]
     },
     {
-      "text": " vez,",
+      "text": " uno,",
       "timestamp": [
-        5.74,
-        6.3
+        16.82,
+        17.42
       ]
     },
     {
-      "text": " otra",
+      "text": " otro,",
       "timestamp": [
-        6.3,
-        6.96
+        17.42,
+        17.96
       ]
     },
     {
-      "text": " vez,",
+      "text": " otro",
       "timestamp": [
-        6.96,
-        7.58
+        17.96,
+        18.3
       ]
     },
     {
-      "text": " otra",
+      "text": " más.",
       "timestamp": [
-        8.02,
-        8.22
+        18.3,
+        18.8
       ]
     },
     {
-      "text": " vez,",
+      "text": " Todos",
       "timestamp": [
-        8.22,
-        8.96
+        18.84,
+        19.1
       ]
     },
     {
-      "text": " equipo",
+      "text": " quieren",
       "timestamp": [
-        8.96,
-        10.48
+        19.1,
+        19.6
       ]
     },
     {
-      "text": " es",
+      "text": " Wi",
       "timestamp": [
-        10.48,
-        10.74
+        19.6,
+        20.02
       ]
     },
     {
-      "text": " antiguo,",
+      "text": "-Fi.",
       "timestamp": [
-        10.74,
-        11.38
+        20.02,
+        20.92
       ]
     },
     {
-      "text": " solo",
+      "text": " Tal",
       "timestamp": [
-        11.38,
-        11.5
+        21.06,
+        21.18
       ]
     },
     {
-      "text": " 2",
+      "text": " vez",
       "timestamp": [
-        11.5,
-        11.74
-      ]
-    },
-    {
-      "text": ".4,",
-      "timestamp": [
-        11.74,
-        12.62
-      ]
-    },
-    {
-      "text": " interferencia,",
-      "timestamp": [
-        12.62,
-        13.56
-      ]
-    },
-    {
-      "text": " distancia,",
-      "timestamp": [
-        13.56,
-        14.32
-      ]
-    },
-    {
-      "text": " mal",
-      "timestamp": [
-        14.32,
-        14.48
-      ]
-    },
-    {
-      "text": " ubicación,",
-      "timestamp": [
-        14.48,
-        15.32
-      ]
-    },
-    {
-      "text": " antes",
-      "timestamp": [
-        15.54,
-        15.54
-      ]
-    },
-    {
-      "text": " de",
-      "timestamp": [
-        15.54,
-        15.7
-      ]
-    },
-    {
-      "text": " comprar,",
-      "timestamp": [
-        15.7,
-        17.1
-      ]
-    },
-    {
-      "text": " hay",
-      "timestamp": [
-        17.1,
-        17.46
-      ]
-    },
-    {
-      "text": " que",
-      "timestamp": [
-        17.46,
-        17.58
-      ]
-    },
-    {
-      "text": " diagnosticar,",
-      "timestamp": [
-        17.58,
-        19.56
-      ]
-    },
-    {
-      "text": " soportar,",
-      "timestamp": [
-        19.56,
-        20.46
-      ]
-    },
-    {
-      "text": " prima,",
-      "timestamp": [
-        20.46,
-        20.8
-      ]
-    },
-    {
-      "text": " revisisa",
-      "timestamp": [
-        20.8,
-        21.14
+        21.18,
+        21.28
       ]
     },
     {
       "text": " tu",
       "timestamp": [
-        21.14,
-        21.36
+        21.28,
+        21.48
       ]
     },
     {
-      "text": " señal,",
+      "text": " internet",
       "timestamp": [
-        21.36,
-        21.94
-      ]
-    },
-    {
-      "text": " tus",
-      "timestamp": [
-        21.94,
-        22.06
-      ]
-    },
-    {
-      "text": " canales,",
-      "timestamp": [
-        22.06,
-        22.54
-      ]
-    },
-    {
-      "text": " tu",
-      "timestamp": [
-        22.54,
-        22.64
-      ]
-    },
-    {
-      "text": " seguridad",
-      "timestamp": [
-        22.64,
-        23.24
-      ]
-    },
-    {
-      "text": " y",
-      "timestamp": [
-        23.72,
-        23.82
-      ]
-    },
-    {
-      "text": " cada",
-      "timestamp": [
-        23.82,
-        24.02
-      ]
-    },
-    {
-      "text": " conexión,",
-      "timestamp": [
-        24.02,
-        24.78
-      ]
-    },
-    {
-      "text": " ni",
-      "timestamp": [
-        24.78,
-        25.02
-      ]
-    },
-    {
-      "text": " si",
-      "timestamp": [
-        25.02,
-        25.16
-      ]
-    },
-    {
-      "text": " tu",
-      "timestamp": [
-        25.16,
-        25.36
-      ]
-    },
-    {
-      "text": " rella",
-      "timestamp": [
-        25.36,
-        25.6
-      ]
-    },
-    {
-      "text": " quedo",
-      "timestamp": [
-        25.6,
-        25.96
-      ]
-    },
-    {
-      "text": " atrás",
-      "timestamp": [
-        25.96,
-        26.32
-      ]
-    },
-    {
-      "text": " es",
-      "timestamp": [
-        26.86,
-        27.08
-      ]
-    },
-    {
-      "text": " momento",
-      "timestamp": [
-        27.08,
-        27.3
-      ]
-    },
-    {
-      "text": " de",
-      "timestamp": [
-        27.3,
-        27.68
-      ]
-    },
-    {
-      "text": " avanzar",
-      "timestamp": [
-        27.68,
-        28.54
-      ]
-    },
-    {
-      "text": " wifi",
-      "timestamp": [
-        28.84,
-        29
-      ]
-    },
-    {
-      "text": " 7",
-      "timestamp": [
-        29,
-        30.02
-      ]
-    },
-    {
-      "text": " más",
-      "timestamp": [
-        30.02,
-        30.52
-      ]
-    },
-    {
-      "text": " capacidad,",
-      "timestamp": [
-        30.52,
-        31.66
-      ]
-    },
-    {
-      "text": " más",
-      "timestamp": [
-        31.66,
-        31.86
-      ]
-    },
-    {
-      "text": " velocidad",
-      "timestamp": [
-        31.86,
-        32.18
-      ]
-    },
-    {
-      "text": " más",
-      "timestamp": [
-        32.98,
-        33.16
-      ]
-    },
-    {
-      "text": " dispositivos",
-      "timestamp": [
-        33.16,
-        33.86
-      ]
-    },
-    {
-      "text": " comunicándose",
-      "timestamp": [
-        33.86,
-        34.9
-      ]
-    },
-    {
-      "text": " al",
-      "timestamp": [
-        34.9,
-        35.14
-      ]
-    },
-    {
-      "text": " mismo",
-      "timestamp": [
-        35.14,
-        35.4
-      ]
-    },
-    {
-      "text": " tiempo",
-      "timestamp": [
-        35.4,
-        35.88
+        21.48,
+        21.86
       ]
     },
     {
       "text": " no",
       "timestamp": [
-        36.12,
-        36.24
+        21.86,
+        22.24
       ]
     },
     {
-      "text": " adivíne",
+      "text": " es",
       "timestamp": [
-        36.24,
-        36.66
+        22.24,
+        22.42
       ]
     },
     {
-      "text": " ese",
+      "text": " el",
       "timestamp": [
-        36.66,
-        36.82
+        22.42,
+        22.6
       ]
     },
     {
-      "text": " problema",
+      "text": " problema.",
       "timestamp": [
-        36.82,
-        37.3
+        22.6,
+        23.6
       ]
     },
     {
-      "text": " que",
+      "text": " Tu",
       "timestamp": [
-        37.86,
-        37.94
+        24.38,
+        24.48
       ]
     },
     {
-      "text": " agnóstico",
+      "text": " casa",
       "timestamp": [
-        37.94,
-        38.5
+        24.48,
+        24.74
       ]
     },
     {
-      "text": " wifi",
+      "text": " cambió,",
       "timestamp": [
-        38.5,
-        39.02
+        24.74,
+        25.46
       ]
     },
     {
-      "text": " so",
+      "text": " tu",
       "timestamp": [
-        39.94,
-        40.16
+        25.46,
+        25.56
       ]
     },
     {
-      "text": " por",
+      "text": " red",
       "timestamp": [
-        40.16,
-        40.34
+        25.54,
+        25.72
       ]
     },
     {
-      "text": " te",
+      "text": " también",
       "timestamp": [
-        40.34,
-        40.52
+        25.72,
+        26.1
       ]
     },
     {
-      "text": " pimo",
+      "text": " debería",
       "timestamp": [
-        40.52,
-        40.94
+        26.1,
+        26.64
       ]
     },
     {
-      "text": " suporte",
+      "text": " hacerlo.",
       "timestamp": [
-        42.94,
-        42.94
+        26.64,
+        27.4
       ]
     },
     {
-      "text": " pima",
+      "text": " Y",
       "timestamp": [
-        42.94,
-        42.94
+        27.48,
+        27.56
+      ]
+    },
+    {
+      "text": " Fy7",
+      "timestamp": [
+        27.56,
+        28.08
+      ]
+    },
+    {
+      "text": " más",
+      "timestamp": [
+        28.08,
+        28.54
+      ]
+    },
+    {
+      "text": " dispositivos",
+      "timestamp": [
+        28.54,
+        29.46
+      ]
+    },
+    {
+      "text": " más",
+      "timestamp": [
+        29.46,
+        29.88
+      ]
+    },
+    {
+      "text": " capacidad,",
+      "timestamp": [
+        29.88,
+        31.22
+      ]
+    },
+    {
+      "text": " una",
+      "timestamp": [
+        31.22,
+        31.42
+      ]
+    },
+    {
+      "text": " red",
+      "timestamp": [
+        31.42,
+        31.64
+      ]
+    },
+    {
+      "text": " preparada",
+      "timestamp": [
+        31.64,
+        32.38
+      ]
+    },
+    {
+      "text": " para",
+      "timestamp": [
+        32.38,
+        32.72
+      ]
+    },
+    {
+      "text": " tu",
+      "timestamp": [
+        32.72,
+        32.96
+      ]
+    },
+    {
+      "text": " hogar",
+      "timestamp": [
+        32.96,
+        33.3
+      ]
+    },
+    {
+      "text": " inteligente.",
+      "timestamp": [
+        33.3,
+        35.82
+      ]
+    },
+    {
+      "text": " Tu",
+      "timestamp": [
+        35.82,
+        36.18
+      ]
+    },
+    {
+      "text": " Wi",
+      "timestamp": [
+        36.18,
+        36.44
+      ]
+    },
+    {
+      "text": "-Fi",
+      "timestamp": [
+        36.44,
+        36.58
+      ]
+    },
+    {
+      "text": " puede",
+      "timestamp": [
+        36.58,
+        36.96
+      ]
+    },
+    {
+      "text": " con",
+      "timestamp": [
+        36.96,
+        37.22
+      ]
+    },
+    {
+      "text": " todos,",
+      "timestamp": [
+        37.22,
+        38.18
+      ]
+    },
+    {
+      "text": " contacta",
+      "timestamp": [
+        38.18,
+        38.82
+      ]
+    },
+    {
+      "text": " a",
+      "timestamp": [
+        38.82,
+        39.06
+      ]
+    },
+    {
+      "text": " soporte",
+      "timestamp": [
+        39.06,
+        39.58
+      ]
+    },
+    {
+      "text": " Fyme.",
+      "timestamp": [
+        39.58,
+        41.7
+      ]
+    },
+    {
+      "text": " Actualiza",
+      "timestamp": [
+        41.7,
+        36.94
+      ]
+    },
+    {
+      "text": " tu",
+      "timestamp": [
+        36.94,
+        37.22
+      ]
+    },
+    {
+      "text": " reir!",
+      "timestamp": [
+        37.22,
+        37.96
       ]
     }
   ]

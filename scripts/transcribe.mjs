@@ -1,12 +1,14 @@
 import fs from 'fs';
+import path from 'path';
 import decode from 'audio-decode';
 import { pipeline } from '@xenova/transformers';
 
-async function main() {
-  console.log('Loading audio file...');
-  const audioBuffer = fs.readFileSync('public/diagnostico_wifi.mp3');
+async function transcribe() {
+  const audioPath = path.resolve('input/Tu red también debería hacerlo.mp3');
+  console.log('Loading audio file:', audioPath);
+  const audioBuffer = fs.readFileSync(audioPath);
   const audioData = await decode(audioBuffer);
-  
+
   const channelData = audioData.channelData;
   const originalSampleRate = audioData.sampleRate;
   const targetSampleRate = 16000;
@@ -24,7 +26,6 @@ async function main() {
     }
   }
 
-  // Resample to 16000 Hz if needed
   let resampled;
   if (originalSampleRate === targetSampleRate) {
     resampled = monoChannel;
@@ -61,4 +62,4 @@ async function main() {
   console.log('Saved raw transcription to src/captions/whisper_raw.json');
 }
 
-main().catch(console.error);
+transcribe().catch(console.error);

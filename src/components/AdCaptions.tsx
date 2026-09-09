@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
-import captionsData from '../captions/captions.json';
+import captionsData from '../captions/ad_captions.json';
 
 export interface CaptionToken {
   text: string;
@@ -16,7 +16,7 @@ export interface CaptionPage {
   tokens: CaptionToken[];
 }
 
-export const Captions: React.FC = () => {
+export const AdCaptions: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -32,12 +32,12 @@ export const Captions: React.FC = () => {
     return null;
   }
 
-  // Progressive, smooth entrance over 4 frames (no flickering)
+  // Progressive, smooth entrance over 3 frames
   const pageAgeInFrames = Math.max(0, (currentTimeMs - activePage.startMs) / (1000 / fps));
-  const pageOpacity = interpolate(pageAgeInFrames, [0, 4], [0, 1], {
+  const pageOpacity = interpolate(pageAgeInFrames, [0, 3], [0, 1], {
     extrapolateRight: 'clamp',
   });
-  const pageScale = interpolate(pageAgeInFrames, [0, 4], [0.96, 1], {
+  const pageScale = interpolate(pageAgeInFrames, [0, 3], [0.95, 1], {
     extrapolateRight: 'clamp',
   });
 
@@ -45,22 +45,19 @@ export const Captions: React.FC = () => {
     <div
       style={{
         position: 'absolute',
-        top: 0,
+        bottom: 85, // 16:9 safe zone for YouTube controls / progress bar
         left: 0,
-        width: 1080,
-        height: 1920,
+        width: 1920,
         pointerEvents: 'none',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'flex-end',
-        paddingBottom: '430px', // Safe zone: above IG/TikTok UI and clear of router/Sopy
+        alignItems: 'center',
         zIndex: 50,
       }}
     >
       <div
         style={{
-          width: '940px',
-          maxWidth: '92%',
+          maxWidth: '1200px',
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
@@ -68,13 +65,13 @@ export const Captions: React.FC = () => {
           textAlign: 'center',
           transform: `scale(${pageScale})`,
           opacity: pageOpacity,
-          padding: '14px 28px',
-          borderRadius: '24px',
-          backgroundColor: 'rgba(0, 0, 0, 0.48)',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)',
-          border: '1px solid rgba(255, 255, 255, 0.15)',
-          boxShadow: '0 16px 40px rgba(0, 0, 0, 0.75)',
+          padding: '12px 32px',
+          borderRadius: '20px',
+          backgroundColor: 'rgba(8, 12, 22, 0.72)',
+          backdropFilter: 'blur(16px)',
+          WebkitBackdropFilter: 'blur(16px)',
+          border: '1px solid rgba(255, 255, 255, 0.18)',
+          boxShadow: '0 12px 36px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.15)',
         }}
       >
         {activePage.tokens.map((token, index) => {
@@ -85,42 +82,40 @@ export const Captions: React.FC = () => {
           // Gentle pop animation for active spoken word
           const tokenAgeInFrames = Math.max(0, (currentTimeMs - token.fromMs) / (1000 / fps));
           const wordPop = isWordActive
-            ? interpolate(tokenAgeInFrames, [0, 3], [1.0, 1.08], {
+            ? interpolate(tokenAgeInFrames, [0, 2.5], [1.0, 1.07], {
                 extrapolateRight: 'clamp',
               })
             : 1;
 
-          const textColor = token.isHighlight
-            ? isWordActive
-              ? '#FFE600' // Vivid electric yellow for active highlight
-              : '#00E5FF' // High-tech cyan for key highlighted concepts
-            : isWordActive
-            ? '#FFE600'
+          const textColor = isWordActive
+            ? '#FFE600' // Vivid electric yellow for active spoken word
+            : token.isHighlight
+            ? '#00E5FF' // High-tech cyan for key concepts
             : isPastWord
             ? '#FFFFFF'
-            : '#E2E8F0';
+            : '#94A3B8';
 
           return (
             <span
               key={`${token.text}-${index}`}
               style={{
                 display: 'inline-block',
-                margin: '3px 10px',
+                margin: '2px 8px',
                 fontFamily:
-                  'Impact, "Montserrat", "Arial Black", -apple-system, BlinkMacSystemFont, sans-serif',
+                  '-apple-system, BlinkMacSystemFont, "Montserrat", "Inter", "Segoe UI", Roboto, sans-serif',
                 fontWeight: 900,
-                fontSize: '60px',
-                lineHeight: 1.15,
+                fontSize: '38px',
+                lineHeight: 1.2,
                 textTransform: 'uppercase',
-                letterSpacing: '1.5px',
+                letterSpacing: '1.2px',
                 color: textColor,
-                WebkitTextStroke: isWordActive ? '6px #000000' : '5px #000000',
+                WebkitTextStroke: isWordActive ? '4px #000000' : '3px #000000',
                 paintOrder: 'stroke fill',
                 textShadow: isWordActive
-                  ? '0 0 24px rgba(255, 230, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.95)'
-                  : '0 4px 18px rgba(0, 0, 0, 0.9)',
+                  ? '0 0 20px rgba(255, 230, 0, 0.8), 0 4px 14px rgba(0, 0, 0, 0.95)'
+                  : '0 3px 12px rgba(0, 0, 0, 0.9)',
                 transform: `scale(${wordPop})`,
-                transition: 'color 0.1s ease',
+                transition: 'color 0.08s ease, transform 0.08s ease',
               }}
             >
               {token.text}

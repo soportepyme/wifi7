@@ -1,0 +1,577 @@
+{
+  "pages": [
+    {
+      "text": "¿TU COMPUTADORA ESTÁ LENTÍSIMA?",
+      "startMs": 0,
+      "endMs": 2000,
+      "tokens": [
+        {
+          "text": "¿TU",
+          "fromMs": 0,
+          "toMs": 180,
+          "isHighlight": false
+        },
+        {
+          "text": "COMPUTADORA",
+          "fromMs": 180,
+          "toMs": 540,
+          "isHighlight": true
+        },
+        {
+          "text": "ESTÁ",
+          "fromMs": 540,
+          "toMs": 760,
+          "isHighlight": false
+        },
+        {
+          "text": "LENTÍSIMA?",
+          "fromMs": 760,
+          "toMs": 1580,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "¿EL INTERNET SE TRABA?",
+      "startMs": 2000,
+      "endMs": 3360,
+      "tokens": [
+        {
+          "text": "¿EL",
+          "fromMs": 2000,
+          "toMs": 2150,
+          "isHighlight": false
+        },
+        {
+          "text": "INTERNET",
+          "fromMs": 2150,
+          "toMs": 2500,
+          "isHighlight": true
+        },
+        {
+          "text": "SE",
+          "fromMs": 2500,
+          "toMs": 2700,
+          "isHighlight": false
+        },
+        {
+          "text": "TRABA?",
+          "fromMs": 2700,
+          "toMs": 3360,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "¿YOUTUBE CARGA Y CARGA?",
+      "startMs": 3360,
+      "endMs": 5600,
+      "tokens": [
+        {
+          "text": "¿YOUTUBE",
+          "fromMs": 3360,
+          "toMs": 4000,
+          "isHighlight": true
+        },
+        {
+          "text": "CARGA",
+          "fromMs": 4000,
+          "toMs": 4600,
+          "isHighlight": true
+        },
+        {
+          "text": "Y",
+          "fromMs": 4600,
+          "toMs": 4800,
+          "isHighlight": false
+        },
+        {
+          "text": "CARGA?",
+          "fromMs": 4800,
+          "toMs": 5600,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "ANTES DE GASTAR, DESCUBRE QUÉ ESTÁ FALLANDO.",
+      "startMs": 5600,
+      "endMs": 8390,
+      "tokens": [
+        {
+          "text": "ANTES",
+          "fromMs": 5600,
+          "toMs": 5840,
+          "isHighlight": false
+        },
+        {
+          "text": "DE GASTAR,",
+          "fromMs": 5840,
+          "toMs": 6760,
+          "isHighlight": false
+        },
+        {
+          "text": "DESCUBRE",
+          "fromMs": 6760,
+          "toMs": 7300,
+          "isHighlight": true
+        },
+        {
+          "text": "QUÉ ESTÁ FALLANDO.",
+          "fromMs": 7300,
+          "toMs": 8390,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "¡NO COMPRES OTRA COMPUTADORA TODAVÍA!",
+      "startMs": 8890,
+      "endMs": 11200,
+      "tokens": [
+        {
+          "text": "¡NO",
+          "fromMs": 8890,
+          "toMs": 9100,
+          "isHighlight": true
+        },
+        {
+          "text": "COMPRES",
+          "fromMs": 9100,
+          "toMs": 9500,
+          "isHighlight": true
+        },
+        {
+          "text": "OTRA",
+          "fromMs": 9500,
+          "toMs": 9800,
+          "isHighlight": false
+        },
+        {
+          "text": "COMPUTADORA",
+          "fromMs": 9800,
+          "toMs": 10400,
+          "isHighlight": true
+        },
+        {
+          "text": "TODAVÍA!",
+          "fromMs": 10400,
+          "toMs": 11200,
+          "isHighlight": false
+        }
+      ]
+    },
+    {
+      "text": "Y NO PAGUES MÁS MEGAS A CIEGAS.",
+      "startMs": 11200,
+      "endMs": 13200,
+      "tokens": [
+        {
+          "text": "Y NO",
+          "fromMs": 11200,
+          "toMs": 11500,
+          "isHighlight": false
+        },
+        {
+          "text": "PAGUES",
+          "fromMs": 11500,
+          "toMs": 11800,
+          "isHighlight": false
+        },
+        {
+          "text": "MÁS",
+          "fromMs": 11800,
+          "toMs": 12100,
+          "isHighlight": true
+        },
+        {
+          "text": "MEGAS",
+          "fromMs": 12100,
+          "toMs": 12500,
+          "isHighlight": true
+        },
+        {
+          "text": "A CIEGAS.",
+          "fromMs": 12500,
+          "toMs": 13200,
+          "isHighlight": false
+        }
+      ]
+    },
+    {
+      "text": "EL PROBLEMA PUEDE ESTAR DONDE MENOS IMAGINAS.",
+      "startMs": 13200,
+      "endMs": 15810,
+      "tokens": [
+        {
+          "text": "EL PROBLEMA",
+          "fromMs": 13200,
+          "toMs": 13900,
+          "isHighlight": false
+        },
+        {
+          "text": "PUEDE ESTAR",
+          "fromMs": 13900,
+          "toMs": 14500,
+          "isHighlight": false
+        },
+        {
+          "text": "DONDE MENOS",
+          "fromMs": 14500,
+          "toMs": 15000,
+          "isHighlight": true
+        },
+        {
+          "text": "IMAGINAS.",
+          "fromMs": 15000,
+          "toMs": 15810,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "PUEDE SER TU DISCO DURO, POCA MEMORIA,",
+      "startMs": 16310,
+      "endMs": 18400,
+      "tokens": [
+        {
+          "text": "PUEDE SER",
+          "fromMs": 16310,
+          "toMs": 16900,
+          "isHighlight": false
+        },
+        {
+          "text": "TU DISCO DURO,",
+          "fromMs": 16900,
+          "toMs": 17700,
+          "isHighlight": true
+        },
+        {
+          "text": "POCA MEMORIA,",
+          "fromMs": 17700,
+          "toMs": 18400,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "UNA TARJETA WI-FI LIMITADA, SEÑAL DÉBIL,",
+      "startMs": 18400,
+      "endMs": 21500,
+      "tokens": [
+        {
+          "text": "UNA TARJETA",
+          "fromMs": 18400,
+          "toMs": 19500,
+          "isHighlight": false
+        },
+        {
+          "text": "WI-FI LIMITADA,",
+          "fromMs": 19500,
+          "toMs": 20500,
+          "isHighlight": true
+        },
+        {
+          "text": "SEÑAL DÉBIL,",
+          "fromMs": 20500,
+          "toMs": 21500,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "INTERFERENCIAS O DEMASIADOS EQUIPOS USANDO LA RED.",
+      "startMs": 21500,
+      "endMs": 26890,
+      "tokens": [
+        {
+          "text": "INTERFERENCIAS",
+          "fromMs": 21500,
+          "toMs": 23500,
+          "isHighlight": true
+        },
+        {
+          "text": "O DEMASIADOS EQUIPOS",
+          "fromMs": 23500,
+          "toMs": 25500,
+          "isHighlight": false
+        },
+        {
+          "text": "USANDO LA RED.",
+          "fromMs": 25500,
+          "toMs": 26890,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "PORQUE PUEDES TENER MUCHOS MEGAS CONTRATADOS",
+      "startMs": 27290,
+      "endMs": 30000,
+      "tokens": [
+        {
+          "text": "PORQUE PUEDES TENER",
+          "fromMs": 27290,
+          "toMs": 28500,
+          "isHighlight": false
+        },
+        {
+          "text": "MUCHOS MEGAS",
+          "fromMs": 28500,
+          "toMs": 29200,
+          "isHighlight": true
+        },
+        {
+          "text": "CONTRATADOS",
+          "fromMs": 29200,
+          "toMs": 30000,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "Y AÚN ASÍ SUFRIR UNA MALA CONEXIÓN.",
+      "startMs": 30000,
+      "endMs": 33000,
+      "tokens": [
+        {
+          "text": "Y AÚN ASÍ SUFRIR",
+          "fromMs": 30000,
+          "toMs": 31500,
+          "isHighlight": false
+        },
+        {
+          "text": "UNA MALA",
+          "fromMs": 31500,
+          "toMs": 32000,
+          "isHighlight": true
+        },
+        {
+          "text": "CONEXIÓN.",
+          "fromMs": 32000,
+          "toMs": 33000,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "PING ALTO, CONGESTIÓN O MALA COBERTURA",
+      "startMs": 33000,
+      "endMs": 35500,
+      "tokens": [
+        {
+          "text": "PING ALTO,",
+          "fromMs": 33000,
+          "toMs": 34000,
+          "isHighlight": true
+        },
+        {
+          "text": "CONGESTIÓN",
+          "fromMs": 34000,
+          "toMs": 34800,
+          "isHighlight": true
+        },
+        {
+          "text": "O MALA COBERTURA",
+          "fromMs": 34800,
+          "toMs": 35500,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "PUEDEN ARRUINAR LA EXPERIENCIA.",
+      "startMs": 35500,
+      "endMs": 37870,
+      "tokens": [
+        {
+          "text": "PUEDEN ARRUINAR",
+          "fromMs": 35500,
+          "toMs": 36800,
+          "isHighlight": false
+        },
+        {
+          "text": "LA EXPERIENCIA.",
+          "fromMs": 36800,
+          "toMs": 37870,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "EN SOPORTEPYME REVISAMOS TU PC Y TU WI-FI EN TU DOMICILIO.",
+      "startMs": 38270,
+      "endMs": 41800,
+      "tokens": [
+        {
+          "text": "EN SOPORTEPYME",
+          "fromMs": 38270,
+          "toMs": 39300,
+          "isHighlight": true
+        },
+        {
+          "text": "REVISAMOS TU PC",
+          "fromMs": 39300,
+          "toMs": 40200,
+          "isHighlight": false
+        },
+        {
+          "text": "Y TU WI-FI",
+          "fromMs": 40200,
+          "toMs": 41000,
+          "isHighlight": true
+        },
+        {
+          "text": "EN TU DOMICILIO.",
+          "fromMs": 41000,
+          "toMs": 41800,
+          "isHighlight": false
+        }
+      ]
+    },
+    {
+      "text": "ENCONTRAMOS EL VERDADERO CUELLO DE BOTELLA",
+      "startMs": 41800,
+      "endMs": 44500,
+      "tokens": [
+        {
+          "text": "ENCONTRAMOS EL",
+          "fromMs": 41800,
+          "toMs": 42800,
+          "isHighlight": false
+        },
+        {
+          "text": "VERDADERO",
+          "fromMs": 42800,
+          "toMs": 43500,
+          "isHighlight": true
+        },
+        {
+          "text": "CUELLO DE BOTELLA",
+          "fromMs": 43500,
+          "toMs": 44500,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "POR SOLO $250 PESOS.",
+      "startMs": 44500,
+      "endMs": 47360,
+      "tokens": [
+        {
+          "text": "POR SOLO",
+          "fromMs": 44500,
+          "toMs": 45400,
+          "isHighlight": false
+        },
+        {
+          "text": "$250",
+          "fromMs": 45400,
+          "toMs": 46500,
+          "isHighlight": true
+        },
+        {
+          "text": "PESOS.",
+          "fromMs": 46500,
+          "toMs": 47360,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "TE DECIMOS QUÉ ESTÁ FALLANDO Y QUÉ NECESITAS REALMENTE.",
+      "startMs": 47800,
+      "endMs": 51000,
+      "tokens": [
+        {
+          "text": "TE DECIMOS",
+          "fromMs": 47800,
+          "toMs": 48500,
+          "isHighlight": false
+        },
+        {
+          "text": "QUÉ ESTÁ FALLANDO",
+          "fromMs": 48500,
+          "toMs": 49600,
+          "isHighlight": true
+        },
+        {
+          "text": "Y QUÉ NECESITAS",
+          "fromMs": 49600,
+          "toMs": 50400,
+          "isHighlight": false
+        },
+        {
+          "text": "REALMENTE.",
+          "fromMs": 50400,
+          "toMs": 51000,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "SI AUTORIZAS LA SOLUCIÓN,",
+      "startMs": 51000,
+      "endMs": 53500,
+      "tokens": [
+        {
+          "text": "SI AUTORIZAS",
+          "fromMs": 51000,
+          "toMs": 52000,
+          "isHighlight": false
+        },
+        {
+          "text": "LA SOLUCIÓN,",
+          "fromMs": 52000,
+          "toMs": 53500,
+          "isHighlight": true
+        }
+      ]
+    },
+    {
+      "text": "TUS $250 PESOS SE DESCUENTAN DEL SERVICIO.",
+      "startMs": 53500,
+      "endMs": 56800,
+      "tokens": [
+        {
+          "text": "TUS $250 PESOS",
+          "fromMs": 53500,
+          "toMs": 54900,
+          "isHighlight": true
+        },
+        {
+          "text": "SE DESCUENTAN",
+          "fromMs": 54900,
+          "toMs": 55800,
+          "isHighlight": true
+        },
+        {
+          "text": "DEL SERVICIO.",
+          "fromMs": 55800,
+          "toMs": 56800,
+          "isHighlight": false
+        }
+      ]
+    },
+    {
+      "text": "ANTES DE GASTAR... DIAGNOSTICA.",
+      "startMs": 56800,
+      "endMs": 60000,
+      "tokens": [
+        {
+          "text": "ANTES DE GASTAR...",
+          "fromMs": 56800,
+          "toMs": 58500,
+          "isHighlight": false
+        },
+        {
+          "text": "DIAGNOSTICA.",
+          "fromMs": 58500,
+          "toMs": 60000,
+          "isHighlight": true
+        }
+      ]
+    }
+  ]
+}

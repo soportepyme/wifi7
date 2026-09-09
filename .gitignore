@@ -6,17 +6,20 @@ node_modules/
 # Production / Render output
 out/*
 !out/.gitkeep
+renders/*
 build/
 dist/
+
+# Scratch & Temporary frames
+scratch/
+test_frame*.png
+*.tmp
 
 # Input & Generated media
 input/*
 !input/.gitkeep
 public/generated/*
 !public/generated/.gitkeep
-
-# Test frame renders
-test_frame*.png
 
 # Environment & logs
 .env
@@ -33,3 +36,4 @@ yarn-error.log*
 Thumbs.db
 .vscode/
 .idea/
+
